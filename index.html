@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-family: Tahoma, sans-serif;
+            color: white;
+            margin-left: 370px;
+        }
+        div {
+            height: 300px;
+            font-weight: bold;
+            font-size: 25px;
+            background-image: url(sungjinwoo.png);
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            font-size: 50px;
+            margin: 30px;
+            margin-top: 100px;
+            background-color: black;
+            color: white;
+        }
+
+        button:hover{
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript addEventListener() Hands-On</h1>
+
+    <div>
+        <button id="btn1">Scene 1</button>
+        <button id="btn2">Scene 2</button>
+        <button id="btn3">Scene 3</button>
+    </div>
+
+    <script>
+        var b1 = document.getElementById('btn1').addEventListener('click', button1);
+        var b2 = document.getElementById('btn2').addEventListener('click', button2);
+        var b3 = document.getElementById('btn3').addEventListener('click', button3);
+
+        function button1() {
+            document.querySelector('div').style.backgroundImage = "url(igris.png)";
+            alert("Scene 1 was clicked!");
+        }
+
+        function button2() {
+            document.querySelector('div').style.backgroundImage = "url(beru.png)";
+            alert("Scene 2 was clicked!");
+        }
+
+        function button3() {
+            document.querySelector('div').style.backgroundImage = "url(tusk.png)";
+            alert("Scene 3 was clicked!");
+        }
+
+    </script>
+</body>
+</html>
