@@ -29,17 +29,28 @@
         }
 
         button {
+            font-style: italic;
+            font-family: Tahoma, sans-serif;
+            font-weight: bold;
             box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             font-size: 50px;
             margin: 30px;
-            margin-top: 100px;
-            background-color: black;
+            margin-top: 110px;
+            margin-left: 65px;
+        }
+
+        button {
+            background-color: rgba(52, 152, 219, 0); 
             color: white;
         }
 
-        button:hover{
-            background-color: #333;
+        button:hover {
+            background-color: rgba(41, 128, 185, 0.2); 
+        }
+
+        button:active {
+            background-color: rgba(28, 109, 168, 0.4);
         }
     </style>
 </head>
@@ -47,9 +58,9 @@
     <h1>JavaScript addEventListener() Hands-On</h1>
 
     <div>
-        <button id="btn1">Scene 1</button>
-        <button id="btn2">Scene 2</button>
-        <button id="btn3">Scene 3</button>
+        <button id="btn1">IGRIS</button>
+        <button id="btn2">BERU</button>
+        <button id="btn3">TUSK</button>
     </div>
 
     <script>
@@ -59,17 +70,17 @@
 
         function button1() {
             document.querySelector('div').style.backgroundImage = "url(igris.png)";
-            alert("Scene 1 was clicked!");
+            alert('"Igris" was clicked!');
         }
 
         function button2() {
             document.querySelector('div').style.backgroundImage = "url(beru.png)";
-            alert("Scene 2 was clicked!");
+            alert('"Beru" was clicked!');
         }
 
         function button3() {
             document.querySelector('div').style.backgroundImage = "url(tusk.png)";
-            alert("Scene 3 was clicked!");
+            alert('"Tusk" was clicked!');
         }
 
     </script>
